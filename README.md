@@ -1,7 +1,3 @@
-# River-Water-Quality-Statistical-Analysis
-Statistical analysis of river water quality data, investigating seasonal and spatial variations in oxygen and nitrate concentrations using Python, hypothesis testing, and data visualization.
-
-
 # River Water Quality – Statistical Analysis
 
 ## About the Project
@@ -32,7 +28,7 @@ The dataset is balanced, with 45 observations for each section-season combinatio
 
 - Descriptive Statistics and Data Visualization.
 - Shapiro-Wilk Test for Normality.
-- Brown-Forsythe Test for Homogeneity of Variances.
+- Levene Test for Equal Variances (median-centred, i.e. the Brown-Forsythe variant).
 - Independent-Samples t-Test.
 - Mann-Whitney U Test.
 - One-Way ANOVA.
@@ -53,25 +49,22 @@ The dataset is balanced, with 45 observations for each section-season combinatio
 
 ### 3. Additional Analysis: Seasonal Oxygen Patterns
 
-An additional analysis explored spatial differences in oxygen concentrations within each season:
+An additional analysis explored spatial differences in oxygen concentrations within each season. The four seasonal Kruskal-Wallis p-values were Bonferroni-adjusted (m = 4), and the pairwise tests were adjusted within each season (m = 10):
 
 - **Summer:** Significant differences were found, with A4 and A5 showing lower oxygen concentrations than A1, A2, and A3.
-- **Autumn:** A significant difference was found only between A4 and A5.
+- **Autumn:** A4 differs significantly from A5 and, marginally, from A1 (adjusted p = 0.0498).
 - **Spring and Winter:** No statistically significant differences were detected between the sections.
 
 ## Tools & Libraries
 
-- Python
-- Pandas & NumPy
-- SciPy
-- Statsmodels
-- Matplotlib & Seaborn
+- Python 3.10.0
+- pandas 2.3.3
+- SciPy 1.15.3
+- Matplotlib 3.10.9 & Seaborn 0.13.2
 - Jupyter Notebook
 
 ## Significance Level
 
 All hypothesis tests were conducted using a significance level of **α = 0.05**.
-
-## Project Goal
 
 The project demonstrates the application of statistical methods to environmental data, including assumption checking, hypothesis testing, post-hoc analysis, data visualization, and interpretation of statistical results.
