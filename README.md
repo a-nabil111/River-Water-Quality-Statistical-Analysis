@@ -8,10 +8,10 @@ It focuses on the statistical analysis of river water quality data, investigatin
 
 ## Research Questions
 
-The analysis addresses two main questions:
+The analysis addresses the two questions of the task:
 
-1. **Seasonal Differences:** Do oxygen and nitrate concentrations differ significantly between spring and autumn?
-2. **Spatial Differences:** Do oxygen and nitrate concentrations differ significantly across the five river sections? If so, which sections differ from each other?
+1. Is there a statistically significant difference between spring and autumn regarding the concentration of oxygen and nitrate?
+2. Is there a difference in the concentrations between the river sections? Which groups are different from each other?
 
 ## Dataset
 
@@ -66,5 +66,7 @@ An additional analysis explored spatial differences in oxygen concentrations wit
 ## Significance Level
 
 All hypothesis tests were conducted using a significance level of **α = 0.05**.
+
+## Project Goal
 
 The project demonstrates the application of statistical methods to environmental data, including assumption checking, hypothesis testing, post-hoc analysis, data visualization, and interpretation of statistical results.
